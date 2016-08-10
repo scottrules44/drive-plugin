@@ -39,7 +39,7 @@ requestButton.box:addEventListener( "tap", function ( e )
 	drive.request("https://www.googleapis.com/upload/drive/v3/files/", "POST", function ( e )
 		print(json.encode(e.response))
 	end, {uploadType= "multipart"}, {name = fileName}, fileName..".png", system.ResourceDirectory, "image/png", fileName )
-	--]]--
+	----]]
 	--delete file
 	--[[
 	local fileId = "0B5swSg-cH4L6cjdTWU94RTNDR0E"
