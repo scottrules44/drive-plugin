@@ -1,4 +1,4 @@
-local drive = require("plugin.drive")
+local drive = require("plugin.googleDrive")
 local json = require("json")
 local canMakeRequest = false
 drive.init("clientId", "clientSecret", "redirectUrl")
