@@ -36,10 +36,10 @@ requestButton.alpha = 0
 requestButton.box:addEventListener( "tap", function ( e )
 	--upload image
 	--[[
-	local fileName = "arrow"
+	local fileName = "arrow.png"
 	drive.request("https://www.googleapis.com/upload/drive/v3/files/", "POST", function ( e )
 		print(e.response)
-	end, {uploadType= "multipart"}, {name = fileName, parents ={"appDataFolder"}}, fileName..".png", system.ResourceDirectory, "image/png", fileName )
+	end, {uploadType= "multipart"}, {name = fileName}, fileName, system.ResourceDirectory, "image/png", fileName )
 	--]]
 	--delete file
 	--[[
@@ -51,10 +51,10 @@ requestButton.box:addEventListener( "tap", function ( e )
 	--update file
 	--[[
 	local fileId = "0B5swSg-cH4L6cjdTWU94RTNDR0E"
-	local fileName = "arrow"
+	local fileName = "arrow.png"
 	drive.request("https://www.googleapis.com/upload/drive/v3/files/"..fileId, "PATCH", function ( e )
 		print(e.response)
-	end, {fileId= fileId, uploadType= "multipart"}, {name = fileName}, fileName..".png", system.ResourceDirectory, "image/png", fileName )
+	end, {fileId= fileId, uploadType= "multipart"}, {name = fileName}, fileName, system.ResourceDirectory, "image/png", fileName )
 	]]--
 	--list file(s)
 	--[[
