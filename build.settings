@@ -1,8 +1,3 @@
---
--- For more information on build.settings see the Corona SDK Build Guide at:
--- https://docs.coronalabs.com/guide/distribution/buildSettings
---
-
 settings =
 {
 	orientation =
@@ -67,9 +62,9 @@ settings =
 	plugins =
 	{
 		["plugin.googleDrive"] =
-        {
-            -- required
-            publisherId = "com.scottrules44",
-        },
-    }
+		{
+            		-- required
+            		publisherId = "tech.scotth",
+        	},
+	}
 }
