@@ -1,5 +1,5 @@
 --updated require
-local drive = require("drive.googleDrive")
+local drive = require("plugin.googleDrive")
 local json = require("json")
 local canMakeRequest = false
 --drive.onlyAppAccess(true) --configure at will
